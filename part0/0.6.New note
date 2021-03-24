@@ -1,0 +1,8 @@
+note over browser:
+add new note and redraw, then send to server
+end note
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over server:
+server saves new note
+end note
+server-->browser: { message: "note created" }
